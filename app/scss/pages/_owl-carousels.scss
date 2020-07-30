@@ -1,0 +1,44 @@
+.video-owl-carousel {}
+
+#video-carousel {
+    .owl-item {
+        width: 300px !important;
+        height: 305px !important;
+        // margin-right: 38px !important;
+        @include breakpoint(mobile-max) {
+            width: 270px !important;
+            height: 270px !important;
+        }
+    }
+}
+
+.video-carousel__content {
+    position: relative;
+    .pause {
+        position: absolute;
+        background-image: url("../images/video-pause-bg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 119px;
+        height: 119px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include horizontal-vertical-center-transform();
+        @include breakpoint(mobile-max) {
+            width: 96px !important;
+            height: 96px !important;
+        }
+        a {
+            text-decoration: none;
+            img {
+                width: 26px;
+                height: 26px;
+                @include breakpoint(mobile-max) {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
