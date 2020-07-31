@@ -1,0 +1,122 @@
+.main-content {
+    //team section start.
+    .team-visions {
+        &__top {
+            .ups-visions-lists {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-bottom: 1rem;
+                    .team-visions-img-box {
+                        position: relative;
+                        background-image: url("../images/team-vision-bg.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 222px;
+                        height: 171px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 36px;
+                        span {
+                            font-family: $secondary-font;
+                            font-size: 50px;
+                            font-weight: 800;
+                            line-height: 39px;
+                            color: $text-color-white;
+                        }
+                    }
+                    .team-visions-info {
+                        padding-right: 20px;
+                        padding-top: 10px;
+                        &__title {
+                            font-family: $primary-font;
+                            font-size: 21px;
+                            color: #1d1d1d;
+                            padding-bottom: 12px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            position: relative;
+                            margin-bottom: 15px;
+                            width: 100%;
+                            &:after {
+                                position: absolute;
+                                background-color: $base-color2;
+                                content: "";
+                                width: 50px;
+                                height: 4px;
+                                left: 0;
+                                bottom: 0;
+                            }
+                        }
+                        &__para-info {
+                            font-family: $primary-font;
+                            font-size: 20px;
+                            color: #444444;
+                            font-weight: 600;
+                            line-height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .our-team {
+        &__top {
+            .caption-title-team {
+                @include h1_heading();
+                text-align: center;
+                @include breakpoint(mobile-max) {
+                    font-size: 31px;
+                }
+            }
+        }
+        &__bottom {
+            .team-carousel-content {
+                width: 300px;
+                .team-img-box {
+                    position: relative;
+                    width: 300px;
+                    height: 305px;
+                    margin-bottom: 30px;
+                    @include breakpoint(mobile-max) {
+                        width: 284px;
+                    }
+                    .brief-link {
+                        background-image: url("../images/team-link-bg.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 95px;
+                        height: 89px;
+                        display: inline-block;
+                        text-decoration: none;
+                        position: absolute;
+                        bottom: -27px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        img {
+                            width: 13px;
+                            height: 24px;
+                            @include horizontal-vertical-center-transform();
+                        }
+                    }
+                }
+                .team-heading {
+                    font-family: $secondary-font;
+                    font-size: 33px;
+                    font-weight: 400;
+                    color: #464646;
+                    text-align: center;
+                    span {
+                        display: block;
+                        font-size: 20px;
+                        line-height: 38px;
+                    }
+                }
+            }
+        }
+    }
+}

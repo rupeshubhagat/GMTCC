@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GMTCC</title>
+    <!-- Normal CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Minified CSS -->
+    <!-- <link rel="stylesheet" href="css/bundle.min.css"> -->
+</head>
+
+
+<body>
+    <div class="page_wrapper">
+        <header id="header_main" class="fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-sm-4 col-md-1 col-lg-1">
+                        <div class="logo">
+                            <a href=""><img src="../app/images/logo_akarat.png" alt="logo_img"></a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-sm-3 col-md-7 col-lg-8">
+                        <div class="main_menu">
+                            <nav class="navbar navbar-expand-md">
+                                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button> -->
+                                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button> -->
+                                <button type="button" class="btn text-white mobile-menu-btn" data-toggle="modal" data-target="#exampleModal">
+                                  <span class="icon-menu"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarCollapse">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About Us</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Choose 2</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Recently added</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                    <div class="serach_bar">
+                                        <ul>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    <span><img src="../app/images/search_icon.png" alt="search_icon"></span>
+                                                </a>
+                                                <!-- <ul class="dropdown-menu" role="menu">
+                                            <li>
+                                              <form method="post" action="" name="frm_search_keyword" id="frm_search_keyword">
+                                                <div class="form-group">
+                                                  <input class="form-control" placeholder="Search" type="text" name="search_keyword" id="search_keyword"> 
+                                                </div>
+                                                <input type="hidden" name="search_ajax_url" id="search_ajax_url" value="http://editmicrosystem.php-dev.in/wp-admin/admin-ajax.php">
+                                                <button type="button" class="btn btn-default btn-block submitBtn" name="btn_search_keyword" id="btn_search_keyword">Submit</button>
+                                              </form>
+                                            </li>
+                                          </ul> -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                  </form> -->
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-7 col-sm-5 col-md-4 col-lg-3">
+                        <div class="login_btn">
+                            <ul>
+                                <li class="language_dropdown">
+                                    <select class="selectpicker" data-width="fit">
+                                <option data-content='<span class="flag-icon flag-icon-us"></span> English'>ENG</option>
+                                <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>AR</option>
+                              </select>
+                                </li>
+                                <li class="login_link">
+                                    <a href="#">
+                                Login / Register
+                              </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container bootstrap-modals header-modal-mobile">
+            <div class="mobile-menu">
+
+                <!-- <div class="text-center">
+                    <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#exampleModal">
+                         Sidebar Modal
+                        </button>
+                </div> -->
+                <div class="modal left fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <nav class="navbar mobile-navbar">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About Us</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Choose 2</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Recently added</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact Us</a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- container -->
+            </div>
+        </div>
+        <main class="main-content margin-top-mobile">
+            <section class="home_banner">
+                <div class="banner_main">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!-- <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>  -->
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../app/images/home_banner1.jpg" alt="banner img1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../app/images/home_banner2.jpg" alt="banner img2">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a> -->
+                        <div id="overlay"></div>
+                    </div>
+                    <div class="banner_bottom">
+                        <img src="../app/images/banner_bottom_bg.png">
+                    </div>
+                    <div class="banner_bottom_arrow"><span></span></div>
+                </div>
+                <div class="search_area">
+                    <div class="container">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Buy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Rent</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="search_property">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter Keyword..">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Property Type">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Location">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter Price">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team-visions">
+                <div class="container">
+                    <div class="team-visions__top">
+                        <ul class="list-unstyled ups-visions-lists">
+                            <li>
+                                <div class="team-visions-img-box">
+                                    <span>01</span>
+                                </div>
+                                <div class="team-visions-info">
+                                    <h1 class="team-visions-info__title">Our Mission</h1>
+                                    <p class="team-vision-info__para-info">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae venenatis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="team-visions-img-box">
+                                    <span>02</span>
+                                </div>
+                                <div class="team-visions-info">
+                                    <h1 class="team-visions-info__title">Our Approch</h1>
+                                    <p class="team-vision-info__para-info">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae venenatis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="team-visions-img-box">
+                                    <span>03</span>
+                                </div>
+                                <div class="team-visions-info">
+                                    <h1 class="team-visions-info__title">Our Philosohy</h1>
+                                    <p class="team-vision-info__para-info">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae venenatis.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="our-team">
+                <div class="container">
+                    <div class="our-team__top">
+                        <h1 class="caption-title-team">We Are Dynamic Team</h1>
+                    </div>
+                    <div class="our-team__bottom">
+                        <div class="our-team-carousel">
+                            <div class="owl-carousel owl-theme" id="team-carousel">
+                                <div class="item">
+                                    <div class="team-carousel-content">
+                                        <div class="team-img-box">
+                                            <img src="./images/ourteam11.png" alt="team-member-first">
+                                            <a href="javascript:void(0)" class="brief-link">
+                                                <img src="./images/right_arrow.png" alt="right-arrow">
+                                            </a>
+                                        </div>
+                                        <h1 class="team-heading">
+                                            Louis Rowley <span>(Manager)</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="team-carousel-content">
+                                        <div class="team-img-box">
+                                            <img src="./images/ourteam12.png" alt="team-member-second">
+                                            <a href="javascript:void(0)" class="brief-link">
+                                                <img src="./images/right_arrow.png" alt="right-arrow">
+                                            </a>
+                                        </div>
+                                        <h1 class="team-heading">
+                                            Riley Moss <span>(Sales lead)</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="team-carousel-content">
+                                        <div class="team-img-box">
+                                            <img src="./images/ourteam13.png" alt="team-member-third">
+                                            <a href="javascript:void(0)" class="brief-link">
+                                                <img src="./images/right_arrow.png" alt="right-arrow">
+                                            </a>
+                                        </div>
+                                        <h1 class="team-heading">
+                                            Max Gotch <span>(Team Manager)</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="team-carousel-content">
+                                        <div class="team-img-box">
+                                            <img src="./images/ourteam11.png" alt="team-member-first">
+                                            <a href="javascript:void(0)" class="brief-link">
+                                                <img src="./images/right_arrow.png" alt="right-arrow">
+                                            </a>
+                                        </div>
+                                        <h1 class="team-heading">
+                                            Louis Rowley <span>(Manager)</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="team-carousel-content">
+                                        <div class="team-img-box">
+                                            <img src="./images/ourteam12.png" alt="team-member-first">
+                                            <a href="javascript:void(0)" class="brief-link">
+                                                <img src="./images/right_arrow.png" alt="right-arrow">
+                                            </a>
+                                        </div>
+                                        <h1 class="team-heading">
+                                            Riley Moss <span>(Manager)</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="quick_inquiry_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="section_heading">
+                                <h4>QUICK INQUIRY</h4>
+                                <h1>Want more information?</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="inquiry_form_main">
+                                <form action="" name="inquiry-form-main" class="inquiry-form">
+                                    <div class="form-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Your Name">
+                                            <input type="tel" class="form-control" placeholder="Phone Number">
+                                            <input type="email" class="form-control" placeholder="Email-ID">
+                                            <select class="form-control" id="select">
+                                              <option selected>Project</option>
+                                              <option>Project 1</option>
+                                              <option>Project 2</option>
+                                              <option>Project 2</option>
+                                              <option>Project 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-button">
+                                            <button class="form-btn-common inquiry-form-btn ">
+                                              <span class="call-img"><img src="./images/form-call-img.png" alt="forms-call-img"></span>
+                                              <span class="get-call-text">Get a Call back</span>
+                                          </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </section>
+        </main>
+        <footer class="footer footer-bg-opacity">
+            <div class="container ">
+                <div class="footer__top ">
+                    <div class="footer-get-in-touch ">
+                        <div class="footer-get-in-touch__top ">
+                            <h2 class="get-in-touch-title footer-common-title ">GET IN TOUCH</h2>
+                        </div>
+                        <div class="footer-get-in-touch__bottom ">
+                            <div class="footer-menu-list ">
+                                <ul class="list-unstyled ups-footer-menu-list ">
+                                    <li>
+                                        <a href="javascript:void(0) ">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0) ">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0) ">Choose 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0) ">Recently Added</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0) ">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-phone-email">
+                                <div class="footer-phone-email__top">
+                                    <h2 class="footer-common-title ">GET IN TOUCH</h2>
+                                </div>
+                                <div class="footer-phone-email__bottom">
+                                    <div class="footer-phone ">
+                                        <h2 class="footer-caption-title ">Phone</h2>
+                                        <h2 class="footer-caption-subtitle footer-phone-subtitle ">+(12) 9871234344</h2>
+                                        <p class="footer-address ">56, clity ford Street, Lorem G1 HUL1, New City, Ipsum</p>
+                                    </div>
+                                    <div class="footer-email ">
+                                        <h2 class="footer-caption-title ">Email</h2>
+                                        <h2 class="footer-caption-subtitle footer-caption-subtitle-email ">contact@example.com</h2>
+                                        <ul class="list-unstyled ups-list-footer-social ">
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <span class="icon-social-facebook"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0) ">
+                                                    <span class="icon-social-instagram "></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0) ">
+                                                    <span class="icon-social-twitter "></span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="javascript:void(0) ">
+                                                    <span class="icon-social-linkedin "></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0) ">
+                                                    <span class="icon-social-pinterest "></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer-subscribe-us ">
+                        <div class="footer-subscribe-us__top ">
+                            <h2 class="footer-subscribe-title footer-common-title ">
+                                SUBSCRIBE TO NEWSLETTER
+                            </h2>
+                        </div>
+                        <div class="footer-subscribe-us__bottom ">
+                            <div class="footer-subscribe-form ">
+                                <form action=" " name="footer-form " class="subscribe-form ">
+                                    <div class="form-group ">
+                                        <input type="text " class="form-control " placeholder="Enter your email address ">
+                                        <button type="submit " class="footer-subscribe-btn form-btn-common">
+                                      Subscribe
+                                    </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom ">
+                    <h4 class="copy-rights ">
+                        © 2020 – GMTCC. All rights reserved.
+                    </h4>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<!-- Normal JS -->
+<!-- <script src="../node_modules/jquery/dist/jquery.slim.min.js "></script>
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js "></script> -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "></script>
+<script src="../node_modules/owl.carousel/dist/owl.carousel.min.js "></script>
+<script src="js/main.js "></script>
+<script src="js/owl-carousels.js "></script>
+<script src="js/browser-class.js "></script>
+
+<!-- Minified Combine JS -->
+<!-- <script src="js/bundle.min.js "></script> -->
+
+</html>

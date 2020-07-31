@@ -42,3 +42,15 @@
         }
     }
 }
+
+// our team Carousel.
+#team-carousel {
+    .owl-item {
+        .item {
+            @include breakpoint(mobile-max) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

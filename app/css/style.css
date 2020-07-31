@@ -8530,3 +8530,119 @@ header {
           .video-carousel__content .pause a img {
             width: 20px;
             height: 20px; } }
+
+@media (max-width: 767px) {
+  #team-carousel .owl-item .item {
+    display: flex;
+    justify-content: center; } }
+
+.main-content .team-visions__top .ups-visions-lists {
+  display: flex;
+  flex-wrap: wrap; }
+  .main-content .team-visions__top .ups-visions-lists li {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem; }
+    .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box {
+      position: relative;
+      background-image: url("../images/team-vision-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 222px;
+      height: 171px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 36px; }
+      .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box span {
+        font-family: "Fira Sans", sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 39px;
+        color: #ffffff; }
+    .main-content .team-visions__top .ups-visions-lists li .team-visions-info {
+      padding-right: 20px;
+      padding-top: 10px; }
+      .main-content .team-visions__top .ups-visions-lists li .team-visions-info__title {
+        font-family: "Barlow", sans-serif;
+        font-size: 21px;
+        color: #1d1d1d;
+        padding-bottom: 12px;
+        font-weight: 500;
+        line-height: 24px;
+        position: relative;
+        margin-bottom: 15px;
+        width: 100%; }
+        .main-content .team-visions__top .ups-visions-lists li .team-visions-info__title:after {
+          position: absolute;
+          background-color: #FF8484;
+          content: "";
+          width: 50px;
+          height: 4px;
+          left: 0;
+          bottom: 0; }
+      .main-content .team-visions__top .ups-visions-lists li .team-visions-info__para-info {
+        font-family: "Barlow", sans-serif;
+        font-size: 20px;
+        color: #444444;
+        font-weight: 600;
+        line-height: 35px; }
+
+.main-content .our-team__top .caption-title-team {
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  color: #444444;
+  padding-bottom: 25px;
+  font-weight: 500;
+  line-height: 45px;
+  position: relative;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .main-content .our-team__top .caption-title-team {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .main-content .our-team__top .caption-title-team {
+      font-size: 31px; } }
+
+.main-content .our-team__bottom .team-carousel-content {
+  width: 300px; }
+  .main-content .our-team__bottom .team-carousel-content .team-img-box {
+    position: relative;
+    width: 300px;
+    height: 305px;
+    margin-bottom: 30px; }
+    @media (max-width: 767px) {
+      .main-content .our-team__bottom .team-carousel-content .team-img-box {
+        width: 284px; } }
+    .main-content .our-team__bottom .team-carousel-content .team-img-box .brief-link {
+      background-image: url("../images/team-link-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 95px;
+      height: 89px;
+      display: inline-block;
+      text-decoration: none;
+      position: absolute;
+      bottom: -27px;
+      left: 50%;
+      transform: translateX(-50%); }
+      .main-content .our-team__bottom .team-carousel-content .team-img-box .brief-link img {
+        width: 13px;
+        height: 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  .main-content .our-team__bottom .team-carousel-content .team-heading {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    color: #464646;
+    text-align: center; }
+    .main-content .our-team__bottom .team-carousel-content .team-heading span {
+      display: block;
+      font-size: 20px;
+      line-height: 38px; }
