@@ -1,32 +1,152 @@
 .main-content {
     //team section start.
+    //About-us-banner..
+    .banner-top-common {
+        position: relative;
+        &__banner_main {
+            position: relative;
+            .banner_main_bg {
+                img {
+                    width: 100%;
+                }
+            }
+            .banner_bottom {
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .banner_bottom_arrow {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 89px;
+                height: 95px;
+                margin: auto;
+                z-index: 2;
+                background: url("../images/arrow-background.png") no-repeat;
+                background-size: auto;
+                background-size: contain;
+                @include breakpoint(ipad-max) {
+                    width: 71px;
+                    height: 75px;
+                }
+                @include breakpoint(mobile-max) {
+                    width: 40px;
+                    height: 35px;
+                }
+                span {
+                    background-image: url("../images/page_next_arrow.png");
+                    width: 24px;
+                    height: 20px;
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    top: 44%;
+                    @include breakpoint(mobile-max) {
+                        background-size: contain;
+                        width: 18px;
+                        height: 6px;
+                    }
+                }
+            }
+        }
+        &__page-heading {
+            position: absolute;
+            top: 40%;
+            margin: 0 auto;
+            width: 100%;
+            z-index: 2;
+            @include breakpoint(ipad-max) {
+                top: 45%;
+            }
+            @include breakpoint(mobile-max) {
+                top: 15%;
+            }
+            .banner-page-title {
+                font-family: $secondary-font;
+                font-weight: 500;
+                font-size: 67px;
+                color: $text-color-white;
+                line-height: 72px;
+                @include breakpoint(desktop-max) {
+                    font-size: 51px;
+                    line-height: 50px;
+                }
+                @include breakpoint(ipad-max) {
+                    font-size: 32px;
+                    line-height: 33px;
+                }
+                @include breakpoint(mobile-max) {
+                    font-size: 26px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+    //about-us banner-ends
     .team-visions {
+        margin-top: 129px;
+        @include breakpoint(mobile-max) {
+            margin-top: 80px;
+        }
         &__top {
             .ups-visions-lists {
                 display: flex;
                 flex-wrap: wrap;
+                width: 100%;
                 li {
                     width: 50%;
                     display: flex;
                     flex-wrap: nowrap;
                     margin-bottom: 1rem;
+                    @include breakpoint(mobile-max) {
+                        width: 100%;
+                    }
                     .team-visions-img-box {
                         position: relative;
                         background-image: url("../images/team-vision-bg.png");
                         background-repeat: no-repeat;
-                        background-size: cover;
+                        background-size: contain;
                         width: 222px;
                         height: 171px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         margin-right: 36px;
+                        @include breakpoint(desktop-max) {
+                            width: 258px;
+                        }
+                        @include breakpoint(ipad-max) {
+                            width: 399px;
+                            height: 144px;
+                        }
+                        @include breakpoint(mobile-max) {
+                            width: 222px;
+                            height: 136px;
+                            margin-right: 10px;
+                        }
+                        @include breakpoint(custom-small-mobile-max) {
+                            width: 222px;
+                            height: 96px;
+                            margin-right: 10px;
+                        }
                         span {
                             font-family: $secondary-font;
                             font-size: 50px;
                             font-weight: 800;
                             line-height: 39px;
                             color: $text-color-white;
+                            @include breakpoint(mobile-max) {
+                                font-size: 24px;
+                            }
                         }
                     }
                     .team-visions-info {
@@ -59,6 +179,79 @@
                             font-weight: 600;
                             line-height: 35px;
                         }
+                    }
+                }
+            }
+        }
+    }
+    //about-info
+    .about-info {
+        padding-top: 74px;
+        padding-bottom: 20px;
+        background-image: url("../images/about-house-drawing.png");
+        background-repeat: no-repeat;
+        // background-size: contain;
+        background-position: right center;
+        @include breakpoint(medium-large-desktop-max) {
+            background-position: 229%;
+        }
+        @include breakpoint(desktop-max) {
+            background-position: -52%;
+        }
+        @include breakpoint(ipad-max) {
+            background-position: 0%;
+        }
+        .about-info-wrapper {
+            display: flex;
+            width: 100%;
+            flex-wrap: nowrap;
+            @include breakpoint(mobile-max) {
+                flex-wrap: wrap;
+            }
+            .about-info-left {
+                width: 40%;
+                @include breakpoint(mobile-max) {
+                    width: 100%;
+                }
+                .about-title {
+                    @include h4_heading();
+                }
+                .about-subtitle {
+                    @include h1_heading();
+                    max-width: 379px;
+                }
+                .about-info-para {
+                    font-size: $primary-font;
+                    font-weight: 400;
+                    color: $text-color-gray-light;
+                    font-size: 30px;
+                    margin-bottom: 32px;
+                    max-width: 379px;
+                }
+                .about_read_more_btn {
+                    @include read_more_btn;
+                    &::after {
+                        @include read_more_btn_img;
+                    }
+                }
+            }
+            .about-info-right {
+                width: 60%;
+                position: relative;
+                @include breakpoint(mobile-max) {
+                    width: 100%;
+                }
+                .img-bg-blue {
+                    @include breakpoint(ipad-max) {
+                        width: 100%;
+                    }
+                }
+                .about-img-absolute {
+                    position: absolute;
+                    left: 24%;
+                    bottom: 48px;
+                    @include breakpoint(ipad-max) {
+                        width: 69%;
                     }
                 }
             }
@@ -120,3 +313,37 @@
         }
     }
 }
+
+.banner-top-breadcrumb {
+    padding: 5px 0px;
+    background-color: transparent;
+    .breadcrumb-item {
+        &:first-child {
+            &::before {
+                content: "" !important;
+            }
+        }
+        &:before {
+            content: "-" !important;
+            color: $text-color-white !important;
+            align-self: center !important;
+        }
+        a {
+            color: $text-color-white;
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 24px;
+            text-decoration: none;
+            @include breakpoint(ipad-max) {
+                font-size: 18px;
+            }
+            @include breakpoint(mobile-max) {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+// .breadcrumb-item::before {
+//     content: "-" !important;
+// }

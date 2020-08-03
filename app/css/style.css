@@ -8536,58 +8536,260 @@ header {
     display: flex;
     justify-content: center; } }
 
-.main-content .team-visions__top .ups-visions-lists {
-  display: flex;
-  flex-wrap: wrap; }
-  .main-content .team-visions__top .ups-visions-lists li {
-    width: 50%;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 1rem; }
-    .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box {
-      position: relative;
-      background-image: url("../images/team-vision-bg.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 222px;
-      height: 171px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 36px; }
-      .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box span {
-        font-family: "Fira Sans", sans-serif;
-        font-size: 50px;
-        font-weight: 800;
-        line-height: 39px;
-        color: #ffffff; }
-    .main-content .team-visions__top .ups-visions-lists li .team-visions-info {
-      padding-right: 20px;
-      padding-top: 10px; }
-      .main-content .team-visions__top .ups-visions-lists li .team-visions-info__title {
-        font-family: "Barlow", sans-serif;
-        font-size: 21px;
-        color: #1d1d1d;
-        padding-bottom: 12px;
-        font-weight: 500;
-        line-height: 24px;
-        position: relative;
-        margin-bottom: 15px;
+.main-content .banner-top-common {
+  position: relative; }
+  .main-content .banner-top-common__banner_main {
+    position: relative; }
+    .main-content .banner-top-common__banner_main .banner_main_bg img {
+      width: 100%; }
+    .main-content .banner-top-common__banner_main .banner_bottom {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      z-index: 2;
+      width: 100%; }
+      .main-content .banner-top-common__banner_main .banner_bottom img {
         width: 100%; }
-        .main-content .team-visions__top .ups-visions-lists li .team-visions-info__title:after {
-          position: absolute;
-          background-color: #FF8484;
-          content: "";
-          width: 50px;
-          height: 4px;
-          left: 0;
-          bottom: 0; }
-      .main-content .team-visions__top .ups-visions-lists li .team-visions-info__para-info {
+    .main-content .banner-top-common__banner_main .banner_bottom_arrow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 89px;
+      height: 95px;
+      margin: auto;
+      z-index: 2;
+      background: url("../images/arrow-background.png") no-repeat;
+      background-size: auto;
+      background-size: contain; }
+      @media (max-width: 991px) {
+        .main-content .banner-top-common__banner_main .banner_bottom_arrow {
+          width: 71px;
+          height: 75px; } }
+      @media (max-width: 767px) {
+        .main-content .banner-top-common__banner_main .banner_bottom_arrow {
+          width: 40px;
+          height: 35px; } }
+      .main-content .banner-top-common__banner_main .banner_bottom_arrow span {
+        background-image: url("../images/page_next_arrow.png");
+        width: 24px;
+        height: 20px;
+        position: absolute;
+        background-repeat: no-repeat;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 44%; }
+        @media (max-width: 767px) {
+          .main-content .banner-top-common__banner_main .banner_bottom_arrow span {
+            background-size: contain;
+            width: 18px;
+            height: 6px; } }
+  .main-content .banner-top-common__page-heading {
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2; }
+    @media (max-width: 991px) {
+      .main-content .banner-top-common__page-heading {
+        top: 45%; } }
+    @media (max-width: 767px) {
+      .main-content .banner-top-common__page-heading {
+        top: 15%; } }
+    .main-content .banner-top-common__page-heading .banner-page-title {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 500;
+      font-size: 67px;
+      color: #ffffff;
+      line-height: 72px; }
+      @media (max-width: 1199px) {
+        .main-content .banner-top-common__page-heading .banner-page-title {
+          font-size: 51px;
+          line-height: 50px; } }
+      @media (max-width: 991px) {
+        .main-content .banner-top-common__page-heading .banner-page-title {
+          font-size: 32px;
+          line-height: 33px; } }
+      @media (max-width: 767px) {
+        .main-content .banner-top-common__page-heading .banner-page-title {
+          font-size: 26px;
+          line-height: 15px; } }
+
+.main-content .team-visions {
+  margin-top: 129px; }
+  @media (max-width: 767px) {
+    .main-content .team-visions {
+      margin-top: 80px; } }
+  .main-content .team-visions__top .ups-visions-lists {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .main-content .team-visions__top .ups-visions-lists li {
+      width: 50%;
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 1rem; }
+      @media (max-width: 767px) {
+        .main-content .team-visions__top .ups-visions-lists li {
+          width: 100%; } }
+      .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box {
+        position: relative;
+        background-image: url("../images/team-vision-bg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 222px;
+        height: 171px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 36px; }
+        @media (max-width: 1199px) {
+          .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box {
+            width: 258px; } }
+        @media (max-width: 991px) {
+          .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box {
+            width: 399px;
+            height: 144px; } }
+        @media (max-width: 767px) {
+          .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box {
+            width: 222px;
+            height: 136px;
+            margin-right: 10px; } }
+        @media (max-width: 359px) {
+          .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box {
+            width: 222px;
+            height: 96px;
+            margin-right: 10px; } }
+        .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box span {
+          font-family: "Fira Sans", sans-serif;
+          font-size: 50px;
+          font-weight: 800;
+          line-height: 39px;
+          color: #ffffff; }
+          @media (max-width: 767px) {
+            .main-content .team-visions__top .ups-visions-lists li .team-visions-img-box span {
+              font-size: 24px; } }
+      .main-content .team-visions__top .ups-visions-lists li .team-visions-info {
+        padding-right: 20px;
+        padding-top: 10px; }
+        .main-content .team-visions__top .ups-visions-lists li .team-visions-info__title {
+          font-family: "Barlow", sans-serif;
+          font-size: 21px;
+          color: #1d1d1d;
+          padding-bottom: 12px;
+          font-weight: 500;
+          line-height: 24px;
+          position: relative;
+          margin-bottom: 15px;
+          width: 100%; }
+          .main-content .team-visions__top .ups-visions-lists li .team-visions-info__title:after {
+            position: absolute;
+            background-color: #FF8484;
+            content: "";
+            width: 50px;
+            height: 4px;
+            left: 0;
+            bottom: 0; }
+        .main-content .team-visions__top .ups-visions-lists li .team-visions-info__para-info {
+          font-family: "Barlow", sans-serif;
+          font-size: 20px;
+          color: #444444;
+          font-weight: 600;
+          line-height: 35px; }
+
+.main-content .about-info {
+  padding-top: 74px;
+  padding-bottom: 20px;
+  background-image: url("../images/about-house-drawing.png");
+  background-repeat: no-repeat;
+  background-position: right center; }
+  @media (max-width: 1400px) {
+    .main-content .about-info {
+      background-position: 229%; } }
+  @media (max-width: 1199px) {
+    .main-content .about-info {
+      background-position: -52%; } }
+  @media (max-width: 991px) {
+    .main-content .about-info {
+      background-position: 0%; } }
+  .main-content .about-info .about-info-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap; }
+    @media (max-width: 767px) {
+      .main-content .about-info .about-info-wrapper {
+        flex-wrap: wrap; } }
+    .main-content .about-info .about-info-wrapper .about-info-left {
+      width: 40%; }
+      @media (max-width: 767px) {
+        .main-content .about-info .about-info-wrapper .about-info-left {
+          width: 100%; } }
+      .main-content .about-info .about-info-wrapper .about-info-left .about-title {
         font-family: "Barlow", sans-serif;
-        font-size: 20px;
+        font-size: 25px;
+        color: #A5A5A5;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 400;
+        width: 100%; }
+        @media (max-width: 767px) {
+          .main-content .about-info .about-info-wrapper .about-info-left .about-title {
+            text-align: center; } }
+      .main-content .about-info .about-info-wrapper .about-info-left .about-subtitle {
+        font-family: "Barlow", sans-serif;
+        font-size: 40px;
         color: #444444;
-        font-weight: 600;
-        line-height: 35px; }
+        padding-bottom: 25px;
+        font-weight: 500;
+        line-height: 45px;
+        position: relative;
+        margin-bottom: 25px;
+        width: 100%;
+        max-width: 379px; }
+        @media (max-width: 767px) {
+          .main-content .about-info .about-info-wrapper .about-info-left .about-subtitle {
+            text-align: center; } }
+      .main-content .about-info .about-info-wrapper .about-info-left .about-info-para {
+        font-size: "Barlow", sans-serif;
+        font-weight: 400;
+        color: #464646;
+        font-size: 30px;
+        margin-bottom: 32px;
+        max-width: 379px; }
+      .main-content .about-info .about-info-wrapper .about-info-left .about_read_more_btn {
+        color: #767676;
+        font-family: "Barlow", sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        position: relative;
+        margin-bottom: 40px;
+        padding-right: 60px; }
+        .main-content .about-info .about-info-wrapper .about-info-left .about_read_more_btn::after {
+          position: absolute;
+          background-image: url(../images/read_more_btn.png);
+          content: "";
+          width: 49px;
+          height: 46px;
+          right: 0;
+          bottom: 0;
+          top: -10px; }
+    .main-content .about-info .about-info-wrapper .about-info-right {
+      width: 60%;
+      position: relative; }
+      @media (max-width: 767px) {
+        .main-content .about-info .about-info-wrapper .about-info-right {
+          width: 100%; } }
+      @media (max-width: 991px) {
+        .main-content .about-info .about-info-wrapper .about-info-right .img-bg-blue {
+          width: 100%; } }
+      .main-content .about-info .about-info-wrapper .about-info-right .about-img-absolute {
+        position: absolute;
+        left: 24%;
+        bottom: 48px; }
+        @media (max-width: 991px) {
+          .main-content .about-info .about-info-wrapper .about-info-right .about-img-absolute {
+            width: 69%; } }
 
 .main-content .our-team__top .caption-title-team {
   font-family: "Barlow", sans-serif;
@@ -8646,3 +8848,25 @@ header {
       display: block;
       font-size: 20px;
       line-height: 38px; }
+
+.banner-top-breadcrumb {
+  padding: 5px 0px;
+  background-color: transparent; }
+  .banner-top-breadcrumb .breadcrumb-item:first-child::before {
+    content: "" !important; }
+  .banner-top-breadcrumb .breadcrumb-item:before {
+    content: "-" !important;
+    color: #ffffff !important;
+    align-self: center !important; }
+  .banner-top-breadcrumb .breadcrumb-item a {
+    color: #ffffff;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none; }
+    @media (max-width: 991px) {
+      .banner-top-breadcrumb .breadcrumb-item a {
+        font-size: 18px; } }
+    @media (max-width: 767px) {
+      .banner-top-breadcrumb .breadcrumb-item a {
+        font-size: 13px; } }
